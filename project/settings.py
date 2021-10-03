@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-o&3%d)jtl)yuhvs9^albaisx((fon(f6a@d7)9lffy8lku43%f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['timezonesite.heroku.com']
 
 
 # Application definition
@@ -130,7 +130,7 @@ STATICFILES_DIRS = (
 )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
